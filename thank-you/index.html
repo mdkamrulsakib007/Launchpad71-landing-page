@@ -78,18 +78,9 @@ fbq('track', 'PageView');
 <link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="/consultation/funnel.css">
 <script>
-if (window.a71TrackThankYouPage) {
-  // Single confirmed PageView; media buyer can configure /thank-you/ conversion.
-  // Do not also fire a Lead event here, or successful leads may double-count.
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){
-    n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
-    s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
-  }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init','2112411853488877');
-  fbq('track','PageView');
-}
+  // The media buyer can configure a URL-based custom conversion
+  // for this Launchpad71 /thank-you/ destination.
+  // Do not fire a second PageView here; the base pixel already did.
 </script>
 </head>
 <body class="a71-funnel-page a71-funnel-thanks">
