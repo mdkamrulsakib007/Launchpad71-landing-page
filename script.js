@@ -359,6 +359,7 @@
   if (!player) return;
 
   const video = document.getElementById("a71-hero-video");
+  if (!video || video.dataset.videoPending === "true") return;
   const start = document.getElementById("a71-hero-start");
   const controls = document.getElementById("a71-hero-controls");
 
@@ -397,7 +398,7 @@
 
     time.textContent =
       formatTime(video.currentTime) + " / " +
-      formatTime(Number.isFinite(duration) ? duration : 531);
+      formatTime(Number.isFinite(duration) ? duration : 0);
   }
 
   function syncPlayback() {
