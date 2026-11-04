@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#101c27">
+
+  <!-- Apply preference before CSS to avoid a light-mode flash -->
+  <script>
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem("a71-theme"); }
+      catch (error) {}
+
+      if (theme !== "dark" && theme !== "light") {
+        theme = window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark" : "light";
+      }
+
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    })();
+  </script>
+
+  <!-- Website Title -->
+  <title>
+    Area71 Launchpad71 | Own Your Amazon FBA Brand
+  </title>
+
+  <!-- SEO Description -->
+  <meta
+    name="description"
+    content="Own your Amazon FBA brand with Area71 Launchpad71. We manage product research, manufacturer sourcing, launch, Amazon PPC and operations while you focus on your goals."
+  >
+
+  <!-- Canonical URL -->
+  <link
+    rel="canonical"
+    href="https://launchpad71.pages.dev/"
+  >
+
+  <!-- Open Graph: WhatsApp, Facebook, LinkedIn -->
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:site_name"
+    content="Area71 Launchpad71"
+  >
+
+  <meta
+    property="og:title"
+    content="Area71 Launchpad71 | Own Your Amazon FBA Brand"
+  >
+
+  <meta
+    property="og:description"
+    content="Product research, direct manufacturer sourcing, Amazon FBA launch and ongoing account management. Your brand; Area71's execution team."
+  >
+
+  <meta
+    property="og:url"
+    content="https://launchpad71.pages.dev/"
+  >
+
+  <meta
+    property="og:image"
+    content="https://area71bd.com/wp-content/uploads/2025/12/website-banner.jpg"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Area71 Launchpad71 - Amazon FBA Business Services"
+  >
+
+  <!-- Twitter / X -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <!-- Fonts -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet"
+  >
+
+
+
+<!-- ========================================
+     AREA71 Launchpad71 - META PIXEL
+======================================== -->
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){
+n.callMethod?
+n.callMethod.apply(n,arguments):
+n.queue.push(arguments)
+};
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '2112411853488877');
+fbq('track', 'PageView');
+</script>
+
+<!-- End Meta Pixel -->
+
+
+  <!-- Website CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="">
+  
+  <header class="nav" id="top">
+    <div class="container nav-in">
+      <a class="brand" href="#top" aria-label="Area71 Launchpad71 home">
+        <span class="brand-icon"><img src="https://area71bd.com/wp-content/uploads/2025/12/logo-square-15.png.webp" alt="Area71 Venture Limited" width="123" height="55" loading="eager" decoding="async"></span>
+      </a>
+      <nav class="links" aria-label="Main navigation">
+        <a href="#approach">Why Launchpad71</a>
+        <a href="#service">What We Handle</a>
+        <a href="#area71-videos">Case Studies</a>
+        <a href="#economics">Business Economics</a>
+        <a href="#process">Our Process</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="/consultation/">Book a Consultation <span class="arrow" aria-hidden="true">↗</span></a>
+      <button class="theme-toggle" id="theme-toggle" type="button"
+              aria-label="Switch to dark mode" aria-pressed="false"
+              title="Switch to dark mode">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" width="20" height="20"
+             fill="none" stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/>
+        </svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" width="20" height="20"
+             fill="none" stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+        </svg>
+      </button>
+      <button class="menu-btn" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false" id="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <nav class="mobile-menu container" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#approach" onclick="closeMenu()">Why Launchpad71</a>
+      <a href="#service" onclick="closeMenu()">What We Handle</a>
+      <a href="#area71-videos" onclick="closeMenu()">Case Studies</a>
+      <a href="#economics" onclick="closeMenu()">Business Economics</a>
+      <a href="#process" onclick="closeMenu()">Our Process</a>
+      <a href="#faq" onclick="closeMenu()">FAQ</a>
+      <a class="btn btn-primary mobile-cta" href="/consultation/"  style="color:white;margin-top:8px"><span>Book a Free Consultation</span><span class="mobile-cta-arrow" aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div>
+          <span class="eyebrow light">Area71 Launchpad71 · Launch and learn</span>
+          <h1 id="hero-title">Launch Your Amazon FBA Business. <em>Learn to Run It Independently.</em></h1>
+          <p class="hero-intro">From product research and manufacturer sourcing to launching and managing your first product, <strong>Area71 handles the execution</strong> while you gain hands-on experience building your Amazon business.</p>
+          <div class="hero-actions">
+            <a class="btn btn-lime" href="/consultation/" >Book Your Free Launchpad71 Consultation <span class="arrow" aria-hidden="true">↗</span></a>
+            
+<a class="btn btn-ghost" href="#service">
+  <span class="btn-label">Explore the Service</span>
+  <span class="arrow" aria-hidden="true">↓</span>
+</a>
+
+          </div>
+          <div class="hero-points">
+            <span><span class="tick">✓</span> Your account &amp; brand</span>
+            <span><span class="tick">✓</span> End-to-end execution</span>
+            <span><span class="tick">✓</span> A structured one-year journey</span>
+          </div>
+        </div>
+        
+<!-- AREA71 Launchpad71 INTRODUCTION VIDEO -->
+<aside class="a71-hero-media" aria-label="Area71 Launchpad71 introduction video">
+
+  <div class="a71-hero-player" id="a71-hero-player">
+
+    <video id="a71-hero-video" preload="none" playsinline aria-label="Launchpad71 introduction video placeholder" poster="" data-video-pending="true">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="a71-launchpad-hero-placeholder" aria-label="Launchpad71 introductory video coming soon">
+      <span class="a71-launchpad-hero-placeholder-icon" aria-hidden="true">▶</span>
+      <strong>Launchpad71 Introduction Video</strong>
+      <span>Coming soon</span>
+    </div>
+
+    <button
+      class="a71-hero-start"
+      id="a71-hero-start"
+      type="button"
+      aria-label="Play introduction video"
+      hidden
+    >
+      ▶
+    </button>
+
+    <div class="a71-hero-controls" id="a71-hero-controls" hidden>
+
+      <input
+        id="a71-hero-seek"
+        class="a71-hero-seek"
+        type="range"
+        min="0"
+        max="100"
+        step="0.1"
+        value="0"
+        aria-label="Video playback position"
+      >
+
+      <div class="a71-hero-control-row">
+
+        <button id="a71-hero-toggle" type="button"
+                aria-label="Play video">▶</button>
+
+        <span id="a71-hero-time" class="a71-hero-time">
+          0:00 / 0:00
+        </span>
+
+        <button id="a71-hero-mute" type="button"
+                aria-label="Mute video">🔊</button>
+
+        <label class="a71-hero-volume-label">
+          <span class="a71-sr-only">Volume</span>
+          <input id="a71-hero-volume" type="range"
+                 min="0" max="1" step="0.05" value="1">
+        </label>
+
+
+
+
+
+        
+        <label class="a71-hero-speed-label">
+          <span class="a71-sr-only">Playback speed</span>
+          <select id="a71-hero-speed" aria-label="Playback speed">
+            <option value="0.75">0.75×</option>
+            <option value="1" selected>1×</option>
+            <option value="1.25">1.25×</option>
+            <option value="1.5">1.5×</option>
+            <option value="2">2×</option>
+          </select>
+        </label>
+
+        <button id="a71-hero-fullscreen" type="button"
+                aria-label="Fullscreen video">⛶</button>
+
+      </div>
+    </div>
+
+    <p class="a71-hero-video-error" id="a71-hero-error"
+       role="alert" hidden>
+      Unable to load the video. Please try again.
+    </p>
+
+  </div>
+
+</aside>
+
+      </div>
+    </section>
+    <section class="trust" aria-label="Key program characteristics">
+      <div class="container trust-grid">
+        <div class="trust-item"><div class="big">100% Your Brand</div><div class="sm">You retain ownership of the seller account and brand</div></div>
+        <div class="trust-item"><div class="big">Launch & Learn</div><div class="sm">Hands-on guidance through every launch step</div></div>
+        <div class="trust-item"><div class="big">1-Year Support</div><div class="sm">Guided launch and initial inventory support</div></div>
+        <div class="trust-item"><div class="big">Dedicated Launchpad71 Team</div><div class="sm">Amazon-focused research, sourcing and operations</div></div>
+      </div>
+    </section>
+    <!-- Official Area71 banner: kept at its natural aspect ratio, never cropped. -->
+    <section class="section area71-feature" id="area71-feature" aria-labelledby="area71-feature-title">
+      <div class="container">
+        <div class="section-head feature-head">
+          <span class="eyebrow">Area71 Spotlight</span>
+          <h2 id="area71-feature-title">A closer look at Area71.</h2>
+        </div>
+        <div class="feature-card">
+          <img
+    src="https://area71bd.com/wp-content/uploads/2025/12/website-banner.jpg"
+    alt="Area71 official website promotional banner"
+    width="1200"
+    height="400"
+    loading="lazy"
+    decoding="async"
+  >
+        </div>
+      </div>
+    </section>
+
+
+<!-- ========================================
+     AREA71 YOUTUBE VIDEO SHOWCASE
+======================================== -->
+
+<section
+  class="section a71-videos"
+  id="area71-videos"
+  aria-labelledby="a71-videos-title"
+>
+  <div class="container">
+
+    <div class="section-head a71-videos-head">
+      <span class="eyebrow">Case Studies & Insights</span>
+
+      <h2 id="a71-videos-title">
+        Launchpad71 in Action: Stories & Practical Insights.
+      </h2>
+
+      <p class="sub">
+        Four Launchpad71 videos will be featured here. Check back for guided business-launch stories and practical insights.
+      </p>
+    </div>
+
+    <div class="a71-video-grid">
+      <article class="a71-video-card" data-video-pending="true">
+        <div class="a71-video-frame">
+          <button class="a71-video-trigger" type="button" disabled aria-label="Video coming soon">
+            <span class="a71-video-empty">Video coming soon</span>
+            <span class="a71-video-play" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="a71-video-details"><span class="a71-video-number">VIDEO 01</span><h3>The Launchpad71 Journey</h3></div>
+      </article>
+      <article class="a71-video-card" data-video-pending="true">
+        <div class="a71-video-frame">
+          <button class="a71-video-trigger" type="button" disabled aria-label="Video coming soon">
+            <span class="a71-video-empty">Video coming soon</span>
+            <span class="a71-video-play" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="a71-video-details"><span class="a71-video-number">VIDEO 02</span><h3>Launch Your Amazon FBA Business</h3></div>
+      </article>
+      <article class="a71-video-card" data-video-pending="true">
+        <div class="a71-video-frame">
+          <button class="a71-video-trigger" type="button" disabled aria-label="Video coming soon">
+            <span class="a71-video-empty">Video coming soon</span>
+            <span class="a71-video-play" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="a71-video-details"><span class="a71-video-number">VIDEO 03</span><h3>Learn Alongside the Experts</h3></div>
+      </article>
+      <article class="a71-video-card" data-video-pending="true">
+        <div class="a71-video-frame">
+          <button class="a71-video-trigger" type="button" disabled aria-label="Video coming soon">
+            <span class="a71-video-empty">Video coming soon</span>
+            <span class="a71-video-play" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="a71-video-details"><span class="a71-video-number">VIDEO 04</span><h3>From First Product to Independent Seller</h3></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <section class="section" id="approach">
+      <div class="container two-col-intro">
+        <div class="section-head">
+          <span class="eyebrow">Built for aspiring Amazon entrepreneurs</span>
+          <h2>Your business. Expert execution. Skills you can keep.</h2>
+          <p class="sub">Launchpad71 combines Area71's done-for-you Amazon FBA launch services with hands-on learning, preparing you to manage your business independently.</p>
+        </div>
+        <div>
+          <div class="value-statement"><p><strong>We execute while you learn.</strong> Our team guides you through the launch process, from selecting your product to managing the steps of selling on Amazon. You remain involved in learning and major decisions.</p></div>
+          <div class="owner-work">
+            <div class="owner-block"><div class="icon-circle" aria-hidden="true">◎</div><h3>Build your own brand</h3><p>Learn the decisions and processes behind creating and operating an Amazon FBA business.</p></div>
+            <div class="owner-block"><div class="icon-circle" aria-hidden="true">↗</div><h3>Develop practical skills</h3><p>Follow the research, sourcing, launch and advertising workflow with Area71's guidance.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- what area71 will do for you -->
+
+    <section class="section services" id="service">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">What Launchpad71 covers</span><h2>One guided journey. Eight essential capabilities.</h2><p class="sub">Area71 handles the operational work of launching your Amazon FBA business while showing you how each part fits together.</p></div>
+        <div class="services-grid">
+          <article class="service"><div class="service-number">CAPABILITY 01 <span aria-hidden="true">↗</span></div><h3>Product Research</h3><p>Research market demand, competition and product opportunities before choosing a product.</p></article>
+          <article class="service"><div class="service-number">CAPABILITY 02 <span aria-hidden="true">↗</span></div><h3>Supplier Research</h3><p>Find and compare suppliers and manufacturers, and plan sourcing decisions.</p></article>
+          <article class="service"><div class="service-number">CAPABILITY 03 <span aria-hidden="true">↗</span></div><h3>Account Creation</h3><p>Get expert support through the Amazon Seller Central account setup process.</p></article>
+          <article class="service"><div class="service-number">CAPABILITY 04 <span aria-hidden="true">↗</span></div><h3>Shipment Creation</h3><p>Coordinate shipment planning from the supplier to Amazon's fulfillment network.</p></article>
+          <article class="service"><div class="service-number">CAPABILITY 05 <span aria-hidden="true">↗</span></div><h3>Listing Creation</h3><p>Prepare SEO-focused listings, product descriptions, titles and keywords.</p></article>
+          <article class="service"><div class="service-number">CAPABILITY 06 <span aria-hidden="true">↗</span></div><h3>Creative Design</h3><p>Develop product imagery and creative assets for a professional Amazon listing.</p></article>
+          <article class="service"><div class="service-number">CAPABILITY 07 <span aria-hidden="true">↗</span></div><h3>PPC Campaigns</h3><p>Plan and manage launch advertising and improve campaigns using performance data.</p></article>
+          <article class="service"><div class="service-number">CAPABILITY 08 <span aria-hidden="true">↗</span></div><h3>Hands-on Learning</h3><p>Learn the business workflow step by step alongside the Area71 team.</p></article>
+        </div>
+        <div class="service-cta"><p>The brochure describes a one-year project and support focused on selling the initial inventory. Exact scope, conditions, investment and responsibilities are confirmed in your agreement. Results are not guaranteed.</p><a href="/consultation/" class="btn btn-primary">Discuss Your Launchpad71 Plan ↗</a></div>
+      </div>
+    </section>
+
+
+    <section class="section" id="difference">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Learn by building</span><h2>More than a course. More than outsourcing.</h2><p class="sub">Launchpad71 combines expert-led execution with a learning experience centered on your own Amazon FBA business.</p></div>
+        <div class="compare">
+          <article class="compare-card"><h3>Learning entirely on your own</h3><ul><li><span class="marker">•</span>Research each product and supplier independently</li><li><span class="marker">•</span>Plan listings, shipments and creative assets yourself</li><li><span class="marker">•</span>Set up and manage PPC without an execution team</li><li><span class="marker">•</span>Learn through trial, error and self-study</li></ul></article>
+          <article class="compare-card positive"><h3>The Launchpad71 approach</h3><ul><li><span class="marker">✓</span>Area71 handles product research and supplier sourcing</li><li><span class="marker">✓</span>Our team executes listings, shipment planning and PPC</li><li><span class="marker">✓</span>You follow the journey with practical guidance</li><li><span class="marker">✓</span>The goal is to manage your brand more independently over time</li></ul></article>
+        </div>
+      </div>
+    </section>
+    <section class="section calc" id="economics">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Financial feasibility</span><h2>Understand the numbers before you invest.</h2><p class="sub">Amazon FBA costs depend on the product, category, inventory, shipping and advertising. Explore a sample unit-economics scenario below — not a promise of returns.</p></div>
+        <div class="calc-grid">
+          <div class="calc-inputs">
+            <div class="calc-inputs-head"><h3>Build your own sales scenario</h3><span class="calc-head-note">EDITABLE ASSUMPTIONS</span></div>
+            <div class="field-grid">
+              <div class="field"><label for="price">Selling price per unit (USD)</label><div class="input-wrap"><span>$</span><input id="price" type="number" value="35" min="0" max="100000" step="0.5" inputmode="decimal"></div></div>
+              <div class="field"><label for="landed">Landed product cost per unit</label><div class="input-wrap"><span>$</span><input id="landed" type="number" value="11" min="0" max="100000" step="0.5" inputmode="decimal"></div></div>
+              <div class="field"><label for="fba">Estimated FBA fulfillment fee</label><div class="input-wrap"><span>$</span><input id="fba" type="number" value="4.8" min="0" max="100000" step="0.1" inputmode="decimal"></div></div>
+              <div class="field"><label for="referral">Amazon referral fee (%)</label><div class="input-wrap"><span>%</span><input id="referral" type="number" value="15" min="0" max="100" step="0.5" inputmode="decimal"></div></div>
+              <div class="field"><label for="ads">Ad spend per unit sold</label><div class="input-wrap"><span>$</span><input id="ads" type="number" value="6.5" min="0" max="100000" step="0.5" inputmode="decimal"></div></div>
+              <div class="field"><label for="other">Other variable cost per unit</label><div class="input-wrap"><span>$</span><input id="other" type="number" value="1.5" min="0" max="100000" step="0.5" inputmode="decimal"></div></div>
+              <div class="field"><label for="units">Illustrative monthly units sold</label><div class="input-wrap"><span>#</span><input id="units" type="number" value="200" min="0" max="1000000" step="1" inputmode="numeric"></div></div>
+            </div>
+            <p class="calc-tip">Try changing the numbers to see how product and advertising costs affect contribution margin. These figures are hypothetical and are <strong>not</strong> based on a personalized product forecast.</p>
+          </div>
+          <div class="calc-results" aria-live="polite" aria-atomic="true">
+            <span class="eyebrow">Illustrative contribution</span>
+            <h3>Estimated monthly contribution</h3><div class="lead">Revenue remaining after the variable costs entered</div>
+            <div id="monthly" class="result-num">$1,190</div><div id="perunit" class="result-sub">$5.95 per unit · 17.0% contribution margin</div>
+            <div class="result-lines">
+              <div class="result-line"><span>Illustrative monthly revenue</span><b id="revenue">$7,000</b></div>
+              <div class="result-line"><span>Variable cost per unit</span><b id="unitcost">$29.05</b></div>
+              <div class="result-line"><span>Illustrative monthly variable costs</span><b id="totalcost">$5,810</b></div>
+            </div>
+            <div class="stackbar" role="img" aria-label="17.0% contribution, balance variable costs; if contribution is negative, losses are not represented by the bar" id="stackbar"><div class="cost" id="costbar" style="width:83%"></div><div class="contrib" id="contribbar" style="width: 17%;"></div></div>
+            <div class="legend"><span><i class="dot"></i> Variable costs</span><span><i class="dot contribution"></i> Contribution</span></div>
+            <p class="disclaimer">This is <strong>not net profit or ROI</strong>. It excludes Launchpad71 service fees, storage, fixed business costs, subscription charges, taxes, financing, and costs not included in your inputs. Actual fees, demand and performance vary.</p>
+            <a class="btn btn-lime btn-wide" href="/consultation/" >Talk Through Your Budget ↗</a>
+          </div>
+        </div>
+        <p class="notice">The calculator is an educational scenario tool. It does not predict unit sales, future profitability, break-even timing or program eligibility. Request a tailored budget discussion before committing funds.</p>
+      </div>
+    </section>
+    <section class="section roadmap" id="process">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">How Launchpad71 works</span><h2>Build your business, step by step.</h2><p class="sub">A guided one-year journey designed around the practical stages of Amazon FBA launch and learning. Each product has its own timeline.</p></div>
+        <div class="roadmap-grid">
+          <article class="roadmap-step"><span class="step-no">01</span><h3>Plan &amp; Learn</h3><p>Discuss goals, investment requirements, and how Amazon FBA works before making launch decisions.</p></article>
+          <article class="roadmap-step"><span class="step-no">02</span><h3>Research &amp; Source</h3><p>Review product research, compare suppliers, and understand pricing and production choices.</p></article>
+          <article class="roadmap-step"><span class="step-no">03</span><h3>Create &amp; Launch</h3><p>Prepare account setup, listings, creatives, shipment plans and initial PPC campaigns.</p></article>
+          <article class="roadmap-step"><span class="step-no">04</span><h3>Operate &amp; Grow Skills</h3><p>Learn from live operations and receive support under the agreed one-year program scope.</p></article>
+        </div>
+        <div class="owner-banner"><div><h3>Your Amazon brand. A team to launch with. Skills to grow.</h3><p>The Launchpad71 brochure describes ongoing support until the initial inventory is sold, within a one-year project. Discuss the precise terms and any exclusions before enrollment.</p></div><a class="btn btn-lime" href="/consultation/">Start the Conversation ↗</a></div>
+      </div>
+    </section>
+    <section class="section faq" id="faq">
+      <div class="container faq-layout">
+        <div class="section-head"><span class="eyebrow">Questions worth asking</span><h2>Clarity before you launch.</h2><p class="sub">Understand the learning, launch scope and costs before joining Launchpad71.</p><a href="/consultation/" class="btn btn-primary" style="margin-top:22px">Speak With Area71 ↗</a></div>
+        <div class="faq-list">
+          <details open=""><summary>Is Launchpad71 only a training course?</summary><p>No. The Launchpad71 brochure combines done-for-you launch services with hands-on learning, from product research and sourcing through listing, shipment and PPC.</p></details>
+          <details><summary>Will Area71 help me learn to manage the business?</summary><p>Yes. Practical learning is a central program component, intended to help you understand the work and eventually run your business with greater independence.</p></details>
+          <details><summary>What is the duration of Launchpad71?</summary><p>The brochure states a one-year project duration. The start date, support commitments and milestones should be confirmed in your signed agreement.</p></details>
+          <details><summary>How long will Area71 support the first inventory?</summary><p>The brochure describes support until the initial inventory is completely sold. Clarify how this commitment operates within the one-year project duration and any contractual limitations.</p></details>
+          <details><summary>Do I need prior Amazon FBA experience?</summary><p>The program is presented as guided learning, but you should still discuss your starting knowledge, time availability and goals with the Area71 team.</p></details>
+          <details><summary>What investment do I need?</summary><p>Product, manufacturing, shipping, Amazon and advertising costs depend on the selected business plan. Ask for a clear individualized estimate, including the Launchpad71 service fee.</p></details>
+          <details><summary>Are specific sales or profits guaranteed?</summary><p>No specific profits or investment returns are promised on this website. Actual results depend on demand, competition, product economics and execution.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="final-cta">
+      <div class="container"><span class="eyebrow light">Your next step</span><h2>Launch your Amazon FBA business. Learn to manage it confidently.</h2><p>Explore what the Launchpad71 team handles, understand the investment required and build a plan that fits your long-term business goals.</p><a href="/consultation/" class="btn btn-lime" >Book Your Free Launchpad71 Consultation <span class="arrow" aria-hidden="true">↗</span></a><small>Complete your consultation request on the next page.</small></div>
+    </section>
+
+<!-- Consultation requests now open at /consultation/. -->
+
+
+  </main>
+  
+
+
+ 
+<!-- ========== AREA71 FOOTER START ========== -->
+
+<footer class="a71-footer" id="area71-footer">
+
+  <div class="a71-footer-container">
+
+    <div class="a71-footer-grid">
+
+      <!-- COLUMN 1: BRAND INFORMATION -->
+      <div class="a71-footer-brand">
+
+        <a
+          href="https://area71bd.com/"
+          class="a71-footer-logo"
+          aria-label="Visit Area71 website"
+        >
+          <img
+            src="https://area71bd.com/wp-content/uploads/2025/12/logo-square-15.png.webp"
+            alt="Area71 Venture Limited Logo"
+            loading="lazy"
+          >
+        </a>
+
+        <h2 class="a71-footer-tagline">
+          Empowering Entrepreneurs.<br>
+          Building Global Brands.
+        </h2>
+
+        <p class="a71-footer-description">
+          Bangladesh’s first Amazon-certified SPN Partner,
+          offering expert training and end-to-end e-commerce
+          solutions to help entrepreneurs succeed.
+        </p>
+
+      </div>
+
+
+      <!-- COLUMN 2: SOCIAL MEDIA & LINKS -->
+      <div class="a71-footer-middle">
+
+        <h3 class="a71-footer-heading">Follow Us</h3>
+
+        <div class="a71-footer-socials">
+
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/area71bdacademy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="a71-footer-social-btn"
+            aria-label="Area71 on Facebook"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.5-3.9 3.78-3.9 1.09 0 2.24.19 2.24.19v2.46H15.2c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"/>
+            </svg>
+          </a>
+
+          <!-- YouTube -->
+          <a
+            href="https://www.youtube.com/@area71bdacademy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="a71-footer-social-btn"
+            aria-label="Area71 on YouTube"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <rect
+                x="1"
+                y="5"
+                width="22"
+                height="14"
+                rx="4"
+                fill="#ff4444"
+              />
+              <path
+                d="m10 8.5 5.5 3.5-5.5 3.5v-7Z"
+                fill="#ffffff"
+              />
+            </svg>
+          </a>
+
+
+<!-- LinkedIn -->
+<a
+  href="https://www.linkedin.com/company/area71-venture-limited/"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="a71-footer-social-btn"
+  aria-label="Area71 on LinkedIn"
+  title="LinkedIn"
+>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <rect x="2" y="2" width="20" height="20" rx="2"/>
+    <path d="M7 10v7"/>
+    <path d="M7 7h.01"/>
+    <path d="M11 17v-7"/>
+    <path d="M11 13a3 3 0 0 1 6 0v4"/>
+  </svg>
+</a>
+
+<!-- Instagram -->
+<a
+  href="https://www.instagram.com/area71bdacademy/"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="a71-footer-social-btn"
+  aria-label="Area71 on Instagram"
+  title="Instagram"
+>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <rect x="2" y="2" width="20" height="20" rx="5"/>
+    <circle cx="12" cy="12" r="4"/>
+    <circle cx="18" cy="6" r="1" fill="currentColor" stroke="none"/>
+  </svg>
+</a>
+
+
+        </div>
+
+
+        <!-- WEBSITE LINKS -->
+        <nav
+          class="a71-footer-links"
+          aria-label="Area71 footer navigation"
+        >
+
+          <a href="https://area71academy.com/product-category/training-program/">
+            <span>Learn &amp; Grow</span>
+            <span class="a71-footer-pipe">|</span>
+            <strong>Trainngs</strong>
+          </a>
+
+          <a href="https://area71academy.com/shop/">
+            <span>What We Offer</span>
+            <span class="a71-footer-pipe">|</span>
+            <strong>Services</strong>
+          </a>
+
+          <a href="https://area71academy.com/refund-policy/">
+            <span>Money-Back Assurance</span>
+            <span class="a71-footer-pipe">|</span>
+            <strong>Refund Policy</strong>
+          </a>
+
+          <a href="https://area71academy.com/privacy-policy/">
+            <span>Your Data, Your Rights</span>
+            <span class="a71-footer-pipe">|</span>
+            <strong>Privacy Policy</strong>
+          </a>
+
+          <a href="https://area71academy.com/blog/">
+            <span>Insights &amp; Updates</span>
+            <span class="a71-footer-pipe">|</span>
+            <strong>Blogs</strong>
+          </a>
+
+        </nav>
+
+      </div>
+
+
+      <!-- COLUMN 3: CONTACT INFORMATION -->
+      <div class="a71-footer-contact">
+
+        <h3 class="a71-footer-heading">
+          Let's Connect
+        </h3>
+
+        <div class="a71-footer-contact-list">
+
+          <!-- Phone -->
+          <a href="tel:+8809613247171" class="a71-footer-contact-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 2.1 4.18 2 2 0 0 1 4.08 2h3a2 2 0 0 1 2 1.72l.5 3a2 2 0 0 1-.57 1.73L7.1 10.37a16 16 0 0 0 6.53 6.53l1.92-1.92a2 2 0 0 1 1.73-.57l3 .5A2 2 0 0 1 22 16.92Z"/>
+            </svg>
+            <span>+8801805483388</span>
+          </a>
+
+          <!-- Email -->
+          <a
+            href="mailto:info@area71bd.com"
+            class="a71-footer-contact-item"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="2.5" y="4.5" width="19" height="15" rx="2"/>
+              <path d="m3 6 9 7 9-7"/>
+            </svg>
+            <span>info@area71bd.com</span>
+          </a>
+
+          <!-- Address -->
+          <div class="a71-footer-contact-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/>
+              <circle cx="12" cy="10" r="2.5"/>
+            </svg>
+            <span>Uttara, Dhaka, Bangladesh</span>
+          </div>
+
+        </div>
+
+        <!-- CONSULTATION BUTTON -->
+        <a
+          href="/consultation/"
+          class="a71-footer-consultation"
+        >
+          <span>Schedule a Free Consultation</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- COPYRIGHT BAR -->
+  <div class="a71-footer-bottom">
+
+    <div class="a71-footer-bottom-inner">
+
+      <span>
+        © <span id="a71-footer-year">2026</span>
+        Area71 Venture Limited. All rights reserved.
+      </span>
+
+      <span>Area71 Bangladesh</span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- ========== AREA71 FOOTER END ========== -->
+
+
+ <!-- External JavaScript -->
+   <script src="script.js"></script>
+
+</body>
+
+ 
+
+</html>
