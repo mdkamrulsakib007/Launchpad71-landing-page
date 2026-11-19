@@ -13,7 +13,7 @@
 ## Global Constraints
 - Link `href="/consultation/"` exactly. The existing tracker selects `a[href="/consultation/"]`.
 - Colours: pill `#cbe86c` (`--lime`), text `#0e2a22`, badge `#015a49` (`--green`), arrow `#cbe86c`.
-- Label text "Free consultation". Accessible name "Book a free Launchpad71 consultation".
+- Label text "Free consultation". Accessible name "Free consultation with Launchpad71".
 - Offset 16px on screens under 768px and 24px from 768px up, plus `env(safe-area-inset-bottom)`.
 - `z-index: 80`, which is below `.nav` (90).
 - Pulse runs every ~3s and is disabled under `prefers-reduced-motion: reduce`.

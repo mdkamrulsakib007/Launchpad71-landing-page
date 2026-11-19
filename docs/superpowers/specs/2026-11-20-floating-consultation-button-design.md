@@ -31,7 +31,7 @@ A booking button should be on screen at every point of the scroll, on phones, ta
 - **Light and dark mode:** the lime pill reads well on both. On the light theme it gets a soft shadow so it lifts off white sections.
 - **Stacking:** `z-index` 80, below the sticky header (90), so menus and the header always sit on top.
 - **Tracking:** it's a plain `<a href="/consultation/">`, so the existing `Launchpad71ConsultationClick` Meta Pixel event fires with no new code.
-- **Accessibility:** the link's accessible name is "Book a free Launchpad71 consultation". When hidden it's removed from keyboard focus (`visibility:hidden`).
+- **Accessibility:** the link's accessible name is "Free consultation with Launchpad71" (starts with the visible label so voice control works). When hidden it's removed from keyboard focus (`visibility:hidden`).
 - **Scope:** landing page (`index.html`, `style.css`, `script.js`) only. Not shown on `/consultation/` or `/thank-you/`.
 
 ## Verification
